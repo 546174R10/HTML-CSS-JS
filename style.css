@@ -1,0 +1,42 @@
+/* importamos fuente de letra */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Kumbh+Sans:wght@400;700&display=swap');
+/* Agregamos variables de colores  predefinidos */
+:root{
+--Almos-White: hsl(0, 0%, 98%);
+--Medium-Gray: hsl(0, 0%, 41%);
+--Almost-Black: hsl(0, 0%, 8%);
+}
+/* Reseteamos los margenes del navegador */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Agregamos estilos al cuerpo de html */
+body{
+    font-family: 'Epilogue' Arial;
+background-color: var(--Almos-White);
+color: var(--Almost-Black);
+font-size: 18px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px 16px 24px;
+& .menu{
+    display: none;
+
+}
+    & nav{
+    }
+}
+
+
+.attribution { 
+font-size: 11px; 
+text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}

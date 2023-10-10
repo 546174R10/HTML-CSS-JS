@@ -6,46 +6,88 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+ 
 </head>
 <body>
 
   <header>
     <img src="/images/logo.svg" alt="logo">
-    <img src="images/icon-menu.svg" alt="">
+    <img class="menu" src="images/icon-menu.svg" alt="">
   <nav>
+    <!-- primera parte -->
+<div class="back">
+  <div class="front">
+<img id="close-btn" src="images/icon-close-menu.svg" alt="">
     <ul>
-      <li> Features <img src="images/icon-arrow-down.svg" alt=""></li>
-      <li>  Company <img src="images/icon-arrow-down.svg" alt=""> </li>
+      <li> <button> Features</button>
+         <img src="images/icon-arrow-down.svg" alt="flecha abajo">
+      <ul>
+        <li> 
+        <img src="images/icon-todo.svg" alt="todo icon">
+        <span>Todo List</span>
+        </li>
+        <li> 
+          <img src="images/icon-calendar.svg" alt="calendar icon">
+          <span>Calendar</span>
+        </li>
+        <li>
+          <img src="images/icon-reminders.svg" alt="reminders icon">
+        <span> Reminders</span>  
+        </li>
+        <li>
+          <img src="images/icon-planning.svg" alt="planning icon">
+        <span>Planning</span>  
+        </li>
+      </ul>
+      </li>
+      <!-- Segunda parte -->
+      <li> 
+         <button>Company</button> 
+         <img src="images/icon-arrow-down.svg" alt="flecha abajo"> 
+        <ul>
+          <li>History</li>
+          <li>Our Team</li>
+          <li>Blog</li>
+        </ul>
+        </li>
+        <!-- Tercera parte -->
       <li>  Careers <img src="images/icon-arrow-down.svg" alt=""></li>
       <li>  About   <img src="images/icon-arrow-down.svg" alt=""></li>
     </ul>
+  </div>
+</div>
+
+    <button>Login</button>
+<button>Register</button>
   </nav>
   </header>
- 
+ <main>
+<section>
+  <h2>  Make remote work </h2>
+<p>  Get your team in sync, no matter your location. Streamline processes, 
+  create team rituals, and watch productivity soar.</p>
+  <button>  Learn more</button>
+<div> 
+<img src="images/client-databiz.svg" alt="databiz Logo">
+<img src="images/client-audiophile.svg" alt="audiophile Logo">
+<img src="images/client-meet.svg" alt="meet Logo">
+<img src="images/client-maker.svg" alt="maker Logo">
+</div>
+</section>
+<picture>
+  <source srcset="/images/image-hero-mobile.png" media="(max-width: 650px)">
+  <source srcset="/images/images-hero-desktop.png" media="(min-width: 650px)">
+<img src="images/image-hero-mobile.png" alt="hero image">
+</picture>
+</main>
 
-
-
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
-  <div class="attribution">
+ <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Luis Garcia Calvo</a>.
   </div>
 </body>
 </html>
